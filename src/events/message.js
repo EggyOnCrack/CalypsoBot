@@ -47,7 +47,7 @@ module.exports = (client, message) => {
 
         // Update points with commandPoints value
         if (pointTracking)
-          client.db.users.updatePoints.run({ points: commandPoints }, message.author.id, message.guild.id);
+          client.db.users.updatePoints.run({ points: commandPoints }, message.author.id, message.guild.id); //Nettles
         message.command = true; // Add flag for messageUpdate event
         return command.run(message, args); // Run command
       }
