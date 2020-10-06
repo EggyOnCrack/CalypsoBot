@@ -2,7 +2,7 @@ module.exports = async (client) => {
   
   const activities = [
     { name: 'your Commands', type: 'LISTENING' }, 
-    { name: '@Moderation Cat', type: 'LISTENING' }
+    { name: '@Moderation Cat', type: 'LISTENING' },
     { name: 'Made By Eggy', type: 'WATCHING'}
   ];
 
