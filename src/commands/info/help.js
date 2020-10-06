@@ -89,6 +89,7 @@ module.exports = class HelpCommand extends Command {
         .setDescription(stripIndent`
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}help [command]\`
+          **Must Read:** 'You cannot disable admin commands!'
           ${(!all && size != total) ? `**All Commands:** \`${prefix}help all\`` : ''}
         `)
         .setFooter(
