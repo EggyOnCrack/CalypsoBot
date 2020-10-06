@@ -5,7 +5,6 @@ logs/*
 data/emojis
 .vscode
 .directory
-config.json
 to-do.txt
 
 # do not ignore
