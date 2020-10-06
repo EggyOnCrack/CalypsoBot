@@ -39,7 +39,7 @@ module.exports = class HelpCommand extends Command {
       
       embed // Build specific command help embed
         .setTitle(`Command: \`${command.name}\``)
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+        .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
         .setDescription(command.description)
         .addField('Usage', `\`${prefix}${command.usage}\``, true)
         .addField('Type', `\`${capitalize(command.type)}\``, true)
@@ -85,7 +85,7 @@ module.exports = class HelpCommand extends Command {
       const size = message.client.commands.size - commands[OWNER].length;
 
       embed // Build help embed
-        .setTitle('Calypso\'s Commands')
+        .setTitle('Cat\'s Commands')
         .setDescription(stripIndent`
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}help [command]\`
@@ -97,7 +97,7 @@ module.exports = class HelpCommand extends Command {
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
-        .setImage('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_Title.png')
+        .setImage('https://emoji.gg/assets/emoji/6918_cat_gun.png')
         .setColor(message.guild.me.displayHexColor);
 
       for (const type of Object.values(message.client.types)) {
@@ -108,9 +108,8 @@ module.exports = class HelpCommand extends Command {
 
       embed.addField(
         '**Links**', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Support Server](https://discord.gg/pnYVdut) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=762824924112355339&scope=bot&permissions=8) | ' +
+        '[Support Server](https://discord.gg/4mPCcN7)**'
       );
         
     }

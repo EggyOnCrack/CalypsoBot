@@ -1,6 +1,7 @@
 const config = require('./config.json');
 const Client = require('./src/Client.js');
-const { Intents } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
+const { Intents, Discord} = require('discord.js');
 
 global.__basedir = __dirname;
 
@@ -16,14 +17,32 @@ intents.add(
 );
 const client = new Client(config, { ws: { intents: intents } });
 
-// Initialize client
 function init() {
   client.loadEvents('./src/events');
   client.loadCommands('./src/commands');
   client.loadTopics('./data/trivia');
-  client.login(client.token);
+  client.login(process.env.token);
 }
 
 init();
+
+client.on("message", message => {
+
+  let wordArray = message.content.split(" ")
+  console.log(wordArray)
+
+  let filterWords = ["dildo", "dick", "fuck"];
+
+  for (var i = 0; i < filterWords.length; i++) {
+    if (wordArray.includes(filterWords[i])) {
+      message.delete()
+      const cjqijcqcq = new Discord.MessageEmbed()
+      .setTitle('Breached NSFW')
+      .setDescription('Your message has been deleted due to NSFW scan')
+
+      message.channel.send(cjqijcqcq)
+    }
+  }
+})
 
 process.on('unhandledRejection', err => client.logger.error(err));

@@ -1,8 +1,8 @@
 module.exports = async (client) => {
   
   const activities = [
-    { name: 'your commands', type: 'LISTENING' }, 
-    { name: '@Calypso', type: 'LISTENING' }
+    { name: 'your Commands', type: 'LISTENING' }, 
+    { name: '@Moderation Cat', type: 'LISTENING' }
   ];
 
   // Update presence
@@ -116,9 +116,9 @@ module.exports = async (client) => {
     client.db.settings.deleteGuild.run(guild.guild_id);
     client.db.users.deleteGuild.run(guild.guild_id);
 
-    client.logger.info(`Calypso has left ${guild.guild_name}`);
+    client.logger.info(`Cat has left ${guild.guild_name}`);
   }
 
-  client.logger.info('Calypso is now online');
-  client.logger.info(`Calypso is running on ${client.guilds.cache.size} server(s)`);
+  client.logger.info('Cat is now online');
+  client.logger.info(`Cat is running on ${client.guilds.cache.size} server(s)`);
 };

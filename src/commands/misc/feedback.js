@@ -8,9 +8,9 @@ module.exports = class FeedbackCommand extends Command {
       name: 'feedback',
       aliases: ['fb'],
       usage: 'feedback <message>',
-      description: 'Sends a message to the Calypso Support Server\'s feedback channel.',
+      description: 'Sends a message to the Cat Support Server\'s feedback channel.',
       type: client.types.MISC,
-      examples: ['feedback We love Calypso!']
+      examples: ['feedback We love Cat!']
     });
   }
   run(message, args) {
@@ -36,10 +36,10 @@ module.exports = class FeedbackCommand extends Command {
     if (feedback.length > 1024) feedback = feedback.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Feedback')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
       .setDescription(oneLine`
         Successfully sent feedback!
-        Please join the [Calypso Support Server](https://discord.gg/pnYVdut) to further discuss your feedback.
+        Please join the [Cat Support Server](https://discord.gg/4mPCcN7) to further discuss your feedback.
       `) 
       .addField('Member', message.member, true)
       .addField('Message', feedback)
