@@ -37,12 +37,12 @@ module.exports = class ToggleTypeCommand extends Command {
 
     let description;
 
-    // Map types
+
     const types = Object.values(message.client.types);
     const commands = message.client.commands.array().filter(c => c.type === type);
     const { capitalize } = message.client.utils;
 
-    // Disable type
+
     if (types.includes(type)) {
 
       // Enable type
@@ -52,7 +52,7 @@ module.exports = class ToggleTypeCommand extends Command {
         }
         description = `All \`${capitalize(type)}\` type commands have been successfully **enabled**. ${success}`;
       
-      // Disable type
+
       } else {
         for (const cmd of commands) {
           if (!disabledCommands.includes(cmd.name)) disabledCommands.push(cmd.name);
