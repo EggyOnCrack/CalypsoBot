@@ -24,9 +24,9 @@ module.exports = class BotInfoCommand extends Command {
       Database    :: SQLite
     `;
     const embed = new MessageEmbed()
-      .setTitle('Xyla\'s Bot Information')
+      .setTitle('Cat\'s Bot Information')
       .setDescription(oneLine`
-        Xyla bot was strictly made for moderation and to support her community!
+        Moderation Cat bot was strictly made for moderation and to support her community!
         She comes packaged with a variety of commands and 
         a multitude of settings that can be tailored to your server's specific needs. 
         Her codebase also serves as a base framework to easily create Discord bots of all kinds.
@@ -39,9 +39,9 @@ module.exports = class BotInfoCommand extends Command {
       .addField(
         'Links', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=762824924112355339&scope=bot&permissions=8) | ' +
-        '[Support Server](https://discord.gg/WBE8txe)**'
+        '[Support Server](https://discord.io/Modcat)**'
       )
-      .setImage('https://cdn.discordapp.com/attachments/739613590796894299/740376759891001464/Team_Xyla-Logo.jpg')
+      .setImage('https://emoji.gg/assets/emoji/6918_cat_gun.png')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
       .setColor(message.guild.me.displayHexColor);

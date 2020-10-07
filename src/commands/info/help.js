@@ -110,7 +110,7 @@ module.exports = class HelpCommand extends Command {
       embed.addField(
         '**Links**', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=762824924112355339&scope=bot&permissions=8) | ' +
-        '[Support Server](https://discord.gg/4mPCcN7)**'
+        '[Support Server](https://discord.io/Modcat)**'
       );
         
     }

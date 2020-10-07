@@ -42,7 +42,7 @@ module.exports = class ReportBugCommand extends Command {
       .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
       .setDescription(oneLine`
         Successfully sent bug report!
-        Please join the [Cat Support Server](https://discord.gg/4mPCcN7) to further discuss your issue.
+        Please join the [Cat Support Server](https://discord.io/Modcat) to further discuss your issue.
       `) 
       .addField('Member', message.member, true)
       .addField('Message', report)

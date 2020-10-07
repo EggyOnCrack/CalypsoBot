@@ -21,7 +21,7 @@ module.exports = class InviteMeCommand extends Command {
         to invite me to your server!
       `)
       .addField('Other Links', 
-        '**[Support Server](https://discord.gg/4mPCcN7)**'
+        '**[Support Server](https://discord.io/Modcat)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
