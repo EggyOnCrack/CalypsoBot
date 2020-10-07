@@ -14,11 +14,10 @@ module.exports = class SupportServerCommand extends Command {
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('Support Server')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
-      .setDescription('Click [here](https://discord.gg/pnYVdut) to join the Calypso Support Server!')
+      .setThumbnail('https://cdn.discordapp.com/attachments/739613590796894299/740376759891001464/Team_Xyla-Logo.jpgs')
+      .setDescription('Click [here](https://discord.gg/WBE8txe) to join the Xyla Support Server!')
       .addField('Other Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Invite Me](https://discord.gg/WBE8tx)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
