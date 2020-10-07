@@ -7,7 +7,7 @@ module.exports = class PingCommand extends Command {
     super(client, {
       name: 'ping',
       usage: 'ping',
-      description: 'Gets Xyla\'s current latency and API latency.',
+      description: 'Gets cat\'s current latency and API latency.',
       type: client.types.INFO
     });
   }

@@ -9,7 +9,7 @@ module.exports = class ReportBugCommand extends Command {
       aliases: ['bugreport', 'report', 'bug', 'rb', 'br'],
       usage: 'reportbug <message>',
       description: oneLine`
-        Sends a message to the Xyla Support Server's bug report channel.
+        Sends a message to the Cat Support Server's bug report channel.
         When reporting a bug, please include as much information as possible.
       `,
       type: client.types.MISC,
@@ -39,10 +39,10 @@ module.exports = class ReportBugCommand extends Command {
     if (report.length > 1024) report = report.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Bug Report')
-      .setThumbnail('https://cdn.discordapp.com/attachments/739613590796894299/740376759891001464/Team_Xyla-Logo.jpg')
+      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
       .setDescription(oneLine`
         Successfully sent bug report!
-        Please join the [Xyla Support Server](https://discord.gg/WBE8txe) to further discuss your issue.
+        Please join the [Cat Support Server](https://discord.gg/4mPCcN7) to further discuss your issue.
       `) 
       .addField('Member', message.member, true)
       .addField('Message', report)

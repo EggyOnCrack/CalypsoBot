@@ -57,8 +57,8 @@ module.exports = (client, message) => {
       !modChannelIds.includes(message.channel.id)
     ) {
       const embed = new MessageEmbed()
-        .setTitle('Hi, I\'m Xyla. Need help?')
-        .setThumbnail('https://cdn.discordapp.com/attachments/739613590796894299/740376759891001464/Team_Xyla-Logo.jpg')
+        .setTitle('Hi, I\'m Cat. Need help?')
+        .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
           You can add me to your server by clicking 
@@ -66,7 +66,7 @@ module.exports = (client, message) => {
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
-          [Xyla\'s Support Server](https://discord.gg/WBE8txe)!
+          [Cat\'s Support Server](https://discord.gg/4mPCcN7)!
         `)
         .setFooter('DM Egghead#6969 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);
