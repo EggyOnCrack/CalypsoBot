@@ -57,7 +57,7 @@ module.exports = (client, message) => {
       !modChannelIds.includes(message.channel.id)
     ) {
       const embed = new MessageEmbed()
-        .setTitle('Hi, I\'m Cat. Need help?')
+        .setTitle('Hi, I\'m UGVRP. Need help?')
         .setThumbnail('https://cdn.discordapp.com/attachments/744782251857936442/744791035263320174/UGVRP_Logo.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
@@ -66,7 +66,7 @@ module.exports = (client, message) => {
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
-          [Cat\'s Support Server](https://discord.gg/4mPCcN7)!
+          [UGVRP\'s Support Server](https://discord.gg/dtHJQ4X)!
         `)
         .setFooter('DM Purple Shirt#6969 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);
