@@ -68,7 +68,7 @@ module.exports = (client, message) => {
           If you have questions, suggestions, or found a bug, please join the 
           [Cat\'s Support Server](https://discord.io/Modcat)!
         `)
-        .setFooter('DM Purple Shirt#6969 to speak directly with the developer!')
+        .setFooter('DM Egghead#6969 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
     }
