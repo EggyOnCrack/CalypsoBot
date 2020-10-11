@@ -44,7 +44,7 @@ module.exports = class StatsCommand extends Command {
       .addField(
         'Links', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=762824924112355339&scope=bot&permissions=8) | ' +
-        '[Support Server](https://discord.gg/pnYVdut)**'
+        '[Support Server](https://discord.gg/WZ69bTa)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

@@ -9,7 +9,7 @@ module.exports = class ReportBugCommand extends Command {
       aliases: ['bugreport', 'report', 'bug', 'rb', 'br'],
       usage: 'reportbug <message>',
       description: oneLine`
-        Sends a message to the Cat Support Server's bug report channel.
+        Sends a message to the UGVRP Support Server's bug report channel.
         When reporting a bug, please include as much information as possible.
       `,
       type: client.types.MISC,
@@ -39,10 +39,10 @@ module.exports = class ReportBugCommand extends Command {
     if (report.length > 1024) report = report.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Bug Report')
-      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+      .setThumbnail('https://cdn.discordapp.com/attachments/744782251857936442/744791035263320174/UGVRP_Logo.png')
       .setDescription(oneLine`
         Successfully sent bug report!
-        Please join the [Cat Support Server](https://discord.io/Modcat) to further discuss your issue.
+        Please join the [UGVRP Support Server](https://discord.io/Modcat) to further discuss your issue.
       `) 
       .addField('Member', message.member, true)
       .addField('Message', report)

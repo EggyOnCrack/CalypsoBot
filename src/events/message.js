@@ -58,7 +58,7 @@ module.exports = (client, message) => {
     ) {
       const embed = new MessageEmbed()
         .setTitle('Hi, I\'m Cat. Need help?')
-        .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/744782251857936442/744791035263320174/UGVRP_Logo.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
           You can add me to your server by clicking 
@@ -68,7 +68,7 @@ module.exports = (client, message) => {
           If you have questions, suggestions, or found a bug, please join the 
           [Cat\'s Support Server](https://discord.gg/4mPCcN7)!
         `)
-        .setFooter('DM Egghead#6969 to speak directly with the developer!')
+        .setFooter('DM Purple Shirt#6969 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
     }
