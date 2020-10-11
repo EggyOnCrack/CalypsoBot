@@ -39,7 +39,7 @@ module.exports = class ReportBugCommand extends Command {
     if (report.length > 1024) report = report.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Bug Report')
-      .setThumbnail('https://cdn.discordapp.com/attachments/744782251857936442/744791035263320174/UGVRP_Logo.png')
+      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
       .setDescription(oneLine`
         Successfully sent bug report!
         Please join the [UGVRP Support Server](https://discord.io/Modcat) to further discuss your issue.

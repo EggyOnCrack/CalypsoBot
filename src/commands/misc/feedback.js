@@ -36,7 +36,7 @@ module.exports = class FeedbackCommand extends Command {
     if (feedback.length > 1024) feedback = feedback.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Feedback')
-      .setThumbnail('https://cdn.discordapp.com/attachments/744782251857936442/744791035263320174/UGVRP_Logo.png')
+      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
       .setDescription(oneLine`
         Successfully sent feedback!
         Please join the [UGVRP Support Server](https://discord.io/Modcat) to further discuss your feedback.

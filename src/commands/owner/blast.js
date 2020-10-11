@@ -26,7 +26,7 @@ module.exports = class BlastCommand extends Command {
       ) {
         const embed = new MessageEmbed()
           .setTitle('UGVRP System Message')
-          .setThumbnail('https://cdn.discordapp.com/attachments/744782251857936442/744791035263320174/UGVRP_Logo.png')
+          .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
           .setDescription(msg)
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);
