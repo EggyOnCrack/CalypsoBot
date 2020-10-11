@@ -26,23 +26,4 @@ function init() {
 
 init();
 
-client.on("message", message => {
-
-  let wordArray = message.content.split(" ")
-  console.log(wordArray)
-
-  let filterWords = ["dildo", "dick", "fuck"];
-
-  for (var i = 0; i < filterWords.length; i++) {
-    if (wordArray.includes(filterWords[i])) {
-      message.delete()
-      const cjqijcqcq = new Discord.MessageEmbed()
-      .setTitle('Breached NSFW')
-      .setDescription('Your message has been deleted due to NSFW scan')
-
-      message.channel.send(cjqijcqcq)
-    }
-  }
-})
-
 process.on('unhandledRejection', err => client.logger.error(err));

@@ -39,7 +39,7 @@ module.exports = class FeedbackCommand extends Command {
       .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
       .setDescription(oneLine`
         Successfully sent feedback!
-        Please join the [Cat Support Server](https://discord.gg/4mPCcN7) to further discuss your feedback.
+        Please join the [Cat Support Server](https://discord.io/Modcat) to further discuss your feedback.
       `) 
       .addField('Member', message.member, true)
       .addField('Message', feedback)
