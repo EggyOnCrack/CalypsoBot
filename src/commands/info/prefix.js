@@ -7,15 +7,15 @@ module.exports = class PrefixCommand extends Command {
       name: 'prefix',
       aliases: ['pre'],
       usage: 'prefix',
-      description: 'Fetches Cat\'s current prefix.',
+      description: 'Fetches JGVRP\'s current prefix.',
       type: client.types.INFO
     });
   }
   run(message) {
     const prefix = message.client.db.settings.selectPrefix.pluck().get(message.guild.id); // Get prefix
     const embed = new MessageEmbed()
-      .setTitle('Cat\'s Prefix')
-      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+      .setTitle('JGVRP\'s Prefix')
+      .setThumbnail('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
       .addField('Prefix', `\`${prefix}\``, true)
       .addField('Example', `\`${prefix}ping\``, true)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

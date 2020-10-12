@@ -8,9 +8,9 @@ module.exports = class FeedbackCommand extends Command {
       name: 'feedback',
       aliases: ['fb'],
       usage: 'feedback <message>',
-      description: 'Sends a message to the UGVRP Support Server\'s feedback channel.',
+      description: 'Sends a message to the JGVRP Support Server\'s feedback channel.',
       type: client.types.MISC,
-      examples: ['feedback We love UGVRP!']
+      examples: ['feedback We love JGVRP!']
     });
   }
   run(message, args) {
@@ -36,10 +36,10 @@ module.exports = class FeedbackCommand extends Command {
     if (feedback.length > 1024) feedback = feedback.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Feedback')
-      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+      .setThumbnail('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
       .setDescription(oneLine`
         Successfully sent feedback!
-        Please join the [UGVRP Support Server](https://discord.io/Modcat) to further discuss your feedback.
+        Please join the [UGVRP Support Server](https://discord.gg/mqCAShZ) to further discuss your feedback.
       `) 
       .addField('Member', message.member, true)
       .addField('Message', feedback)

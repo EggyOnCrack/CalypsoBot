@@ -39,7 +39,7 @@ module.exports = class HelpCommand extends Command {
       
       embed // Build specific command help embed
         .setTitle(`Command: \`${command.name}\``)
-        .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
         .setDescription(command.description)
         .addField('Usage', `\`${prefix}${command.usage}\``, true)
         .addField('Type', `\`${capitalize(command.type)}\``, true)
@@ -85,7 +85,7 @@ module.exports = class HelpCommand extends Command {
       const size = message.client.commands.size - commands[OWNER].length;
 
       embed // Build help embed
-        .setTitle('Cat\'s Commands')
+        .setTitle('JGVRP\'s Commands')
         .setDescription(stripIndent`
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}help [command]\`
@@ -98,7 +98,7 @@ module.exports = class HelpCommand extends Command {
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
-        .setImage('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+        .setImage('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
         .setColor(message.guild.me.displayHexColor);
 
       for (const type of Object.values(message.client.types)) {

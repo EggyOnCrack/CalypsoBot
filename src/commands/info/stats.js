@@ -10,7 +10,7 @@ module.exports = class StatsCommand extends Command {
       name: 'stats',
       aliases: ['statistics', 'metrics'],
       usage: 'stats',
-      description: 'Fetches Cat\'s statistics.',
+      description: 'Fetches JGVRP\'s statistics.',
       type: client.types.INFO
     });
   }

@@ -20,8 +20,8 @@ module.exports = class UptimeCommand extends Command {
     const seconds = (d.seconds() == 1) ? `${d.seconds()} second` : `${d.seconds()} seconds`;
     const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
     const embed = new MessageEmbed()
-      .setTitle('Cat\'s Uptime')
-      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+      .setTitle('JGVRP\'s Uptime')
+      .setThumbnail('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
       .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
       .addField('Date Launched', date) 
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

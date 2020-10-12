@@ -24,13 +24,13 @@ module.exports = class BotInfoCommand extends Command {
       Database    :: SQLite
     `;
     const embed = new MessageEmbed()
-      .setTitle('Cat\'s Bot Information')
+      .setTitle('JGVRP\'s Bot Information')
       .setDescription(oneLine`
-      Cat bot was strictly made for moderation and to support her community!
+      JGVRP bot was strictly made for moderation and to support her community!
         She comes packaged with a variety of commands and 
         a multitude of settings that can be tailored to your server's specific needs. 
         Her codebase also serves as a base framework to easily create Discord bots of all kinds.
-        She first went live on **September 22, 2020**.
+        She first went live on **October 10, 2020**.
       `)
       .addField('Prefix', `\`${prefix}\``, true)
       .addField('Client ID', `\`${message.client.user.id}\``, true)
@@ -41,7 +41,7 @@ module.exports = class BotInfoCommand extends Command {
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=762824924112355339&scope=bot&permissions=8) | ' +
         '[Support Server](https://discord.io/Modcat)**'
       )
-      .setImage('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+      .setImage('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
       .setColor(message.guild.me.displayHexColor);

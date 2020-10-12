@@ -14,7 +14,7 @@ module.exports = class SupportServerCommand extends Command {
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('Support Server')
-      .setThumbnail('https://emoji.gg/assets/emoji/6918_cat_gun.png')
+      .setThumbnail('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
       .setDescription('Click [here](https://discord.io/Modcat) to join the Cat Support Server!')
       .addField('Other Links', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=762824924112355339&scope=bot&permissions=8)**'

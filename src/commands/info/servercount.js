@@ -8,7 +8,7 @@ module.exports = class ServerCountCommand extends Command {
       name: 'servercount',
       aliases: ['usercount', 'sc', 'uc'],
       usage: 'servercount',
-      description: 'Fetches Cat\'s current server and user count.',
+      description: 'Fetches JGVRP\'s current server and user count.',
       type: client.types.INFO
     });
   }
@@ -18,7 +18,7 @@ module.exports = class ServerCountCommand extends Command {
       Users   :: ${message.client.users.cache.size}
     `;
     const embed = new MessageEmbed()
-      .setTitle('Cat\'s Server Count')
+      .setTitle('JGVRP\'s Server Count')
       .setDescription(stripIndent`\`\`\`asciidoc\n${counts}\`\`\``)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
