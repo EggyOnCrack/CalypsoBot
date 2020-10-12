@@ -5,7 +5,7 @@ module.exports = class startCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'start',
-      aliases: ['session', 'st'],
+      aliases: [],
       usage: 'start',
       description: 'Starts a session for Greenville Role-Play',
       type: client.types.MOD,
@@ -28,5 +28,6 @@ module.exports = class startCommand extends Command {
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);
         message.channel.send(embed);
+        message.react('✅');
       }
     }  
