@@ -14,8 +14,6 @@ module.exports = class BanCommand extends Command {
     });
   }
   async run(message, args) {
-
-    const member = this.getMemberFromMention(message, args[0]) || message.guild.members.cache.get(args[0]);
     if (!member)
       return this.sendErrorMessage(message, 0, 'Please mention a user or provide a valid user ID');
     if (member === message.member)
@@ -28,6 +26,8 @@ module.exports = class BanCommand extends Command {
     let reason = args.slice(1).join(' ');
     if (!reason) reason = '`None`';
     if (reason.length > 1024) reason = reason.slice(0, 1021) + '...';
+    const reactions = await message.awaitReactions(reaction => reaction.name === ":white_check_mark:", {time: 7000});
+    const member = this.getMemberFromMention(message, args[0]) || message.guild.members.cache.get(args[0]);
     
     await member.ban({ reason: reason });
 
