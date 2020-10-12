@@ -21,7 +21,7 @@ module.exports = class startCommand extends Command {
           .setDescription(`${message.author} has started a session!`)
           .addField('Moderator', message.member, true)
           .addField('Server Code', 'idk')
-          .addField('Ping:', `<@&${763226765081444372}>`)
+          .addField('Ping:', `<@&${763230532628250664}>`)
           .addField('✅React now!✅', 'Must have 5 reactions to continue the action!')
           .setImage('https://t6.rbxcdn.com/b6ed73502cb54bbb0c141a391025933f')
           .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
