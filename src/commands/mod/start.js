@@ -26,7 +26,6 @@ module.exports = class startCommand extends Command {
           .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);
-          message.react('✅');
           message.channel.send(embed).then(embedMessage => {
             embedMessage.react("✅")
           })
