@@ -7,7 +7,7 @@ module.exports = class SupportServerCommand extends Command {
       name: 'supportserver',
       aliases: ['support', 'ss'],
       usage: 'supportserver',
-      description: 'Displays the invite link to Cat\'s Discord Support Server.',
+      description: 'Displays the invite link to JGVRP\'s Discord Support Server.',
       type: client.types.INFO
     });
   }
@@ -15,7 +15,7 @@ module.exports = class SupportServerCommand extends Command {
     const embed = new MessageEmbed()
       .setTitle('Support Server')
       .setThumbnail('https://cdn.discordapp.com/attachments/764769098755342347/764770239262359562/New_Project_27.png')
-      .setDescription('Click [here](https://discord.io/Modcat) to join the Cat Support Server!')
+      .setDescription('Click [here](https://discord.com/invite/wcce6zJ) to join the JGVRP Support Server!')
       .addField('Other Links', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=762824924112355339&scope=bot&permissions=8)**'
       )
